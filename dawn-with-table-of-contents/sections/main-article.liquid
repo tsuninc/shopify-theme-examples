@@ -48,6 +48,7 @@
         {%- when 'content'-%}
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
+              <script src="{{ 'table-of-contents.js' | asset_url }}" defer="defer"></script>
           </div>
 
         {%- when 'share' -%}
