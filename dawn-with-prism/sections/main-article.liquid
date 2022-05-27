@@ -1,4 +1,6 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'prism.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'prism.js' | asset_url }}" defer="defer"></script>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
